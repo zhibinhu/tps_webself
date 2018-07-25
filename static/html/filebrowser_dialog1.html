@@ -1,0 +1,40 @@
+<div class="modal fade black-overlay" id="filebrowser">
+  <div class="bottom bg-white text-center">
+    <h3 class='font-thin py-1 m-0 bb-l'>文件浏览器</h3>
+    <div class="gallery" style="max-height: 500px; overflow: auto">
+      <div ng-if="mimetype == 'image'" class="item-auto-width">
+        <div class="box" ng-repeat="file in files">
+          <div class="loader"></div>
+          <div class="image" style="background-image: url({{file.url}})"></div>
+        </div>
+      </div>
+
+      <div ng-if="mimetype == 'audio'">
+        <a class="item {{active(file)}}" ng-click="select(file, $event)" ng-repeat="file in files"><img audioplayer src="file"></a>
+      </div>
+
+      <div ng-if="mimetype == 'video'">
+        <a class="item {{active(file)}}" ng-click="select(file, $event)" ng-repeat="file in files">
+          <img src="{{file.url+'?vframe/jpg/offset/0'}}">
+          <div class="desc">
+            <span class="name">名称：{{file.filename}}</span>
+            <span class="meta">大小: {{filesize(file.size)}}</span>
+          </div>
+                            <span class="btn-play play">
+                            <span class="btn-play-ring"></span>
+                            </span>
+        </a>
+      </div>
+
+      <div ng-if="mimetype == 'file'">
+        <a class="item fileitem {{active(file)}}" ng-click="select(file, $event)" ng-repeat="file in files">
+          <div class="img"><i class="fa fa-file-o"></i></div>
+          <div class="desc">
+            <span class="name">{{file.filename}}</span>
+            <span class="meta">Size: {{filesize(file.size)}}</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

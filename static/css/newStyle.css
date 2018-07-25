@@ -1,0 +1,107 @@
+/***************新版样式为覆盖原来的样式而写***************/
+body{
+    font-size:1rem;
+}
+/**表格样式**/
+.title {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 2px;
+    margin-bottom: 8px;
+}
+.card-inverse{
+    color: rgba(255,255,255,0.9);
+}
+.form-control{
+    font-size:14px;
+}
+.table{
+    margin-bottom:0.8rem;
+    font-size:14px;
+}
+.table td, .table th{
+    padding:8px;
+}
+.table tr:last-child{
+    border-bottom: 1px solid #eceeef;
+}
+.table td.text-xs-center i{
+    margin-right:2px;
+}
+.page-bar{
+    margin-bottom:8px !important;
+    margin-left:10px;
+}
+.shorterNo{
+    max-width:80px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.shorterName{
+    max-width:135px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+/****左侧导航样式*****/
+.app-aside{
+    font-size:1rem;
+    border-right:0;
+}
+.app-aside .aside-item > .aside-item{
+    margin-bottom: 0;
+    border: 0;
+    background: none;
+}
+.nav-item.hidden-sm-down{
+    display:none !important;
+}
+body.header-fixed .app-header{
+    left:0px !important;
+}
+body.header-fixed .app-aside{
+    padding-top:70px;
+}
+/******右侧样式****/
+.app-content{
+    background:#fbfbfb;
+}
+.app-content .app-content-view{
+    padding-top: 26px;
+}
+.app-content .app-content-view>.card{
+    background:none;
+    padding:0 !important;
+}
+.app-content .app-content-view>.row,.app-content .app-content-view .card>.row{
+    padding: 10px;
+    border: 1px solid #eceeef;
+    background: #fff;
+    margin-right: 15px;
+    margin-left:1rem !important;
+}
+.app-content .app-content-view > .row.adminRow{
+    border:0;
+}
+.app-content .app-content-view > .card.logCardBackground{
+    background:#fff;
+}
+.no-gutters.flex-grow.userMargin{
+    border:0;
+}
+
+/**************boostrap样式覆盖**********/
+.tooltip-inner{
+    text-align:left !important;
+}
+
+
+
+
+
+
+
+
+
+

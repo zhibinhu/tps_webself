@@ -1,0 +1,19 @@
+
+.app-header { background-color: #401442;padding: 0 20px;}
+.app-aside { border-right: 1px solid #2d2d2b; background-color: #434D59;    overflow-y: auto;  height: 100vh; }
+.app-aside .children { background-color: #434D59 }
+.app-aside .children .aside-item:hover { background-color: #21252d }
+.app-aside .aside-item, .app-aside .children .fold-header { color: #B7C7D8 }
+.app-aside .aside-item > i { color: #868ea0; background-color: #181a20 }
+.app-aside .aside-item.parent:after { color: #868ea0 }
+.app-aside .aside-item:hover { background-color: #434D59; color: #f1f1f1 }
+.app-aside .aside-item:hover > i { color: #f1f1f1 }
+.app-aside .aside-divider { border-color: #21252d }
+.app-aside .aside-item.active { background-color: #21252d; color: #fff; border-color: #21252d }
+.app-aside .aside-item.active > i { color: #f1f1f1 }
+.app-aside .aside-item.opened { background-color: #434D59 }
+.app-aside .aside-item.opened, .app-aside .aside-item.opened > i, .app-aside .aside-item.opened > span { color: #fff }
+.aside-folded .app-aside .children { border: 1px solid #2d2d2b }
+@media (max-width: 991px) {
+  .app-aside .children { border: 1px solid #2d2d2b }
+}

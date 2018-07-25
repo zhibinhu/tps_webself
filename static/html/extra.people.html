@@ -1,0 +1,451 @@
+<div class="input-holder bg-white ng-scope">
+  <i class="ti-search"></i>
+  <input type="text" class="form-control b-0 bg-no no-shadow" data-ng-model="searchText" autofocus="" style=""
+         placeholder="Search person...">
+  <div class="operation">
+    <button type="button" class="btn btn-link data-ng-hide" data-ng-show="searchText.length >= 1" data-ng-click="searchText = ''">
+      <i class="fa fa-times fa-fw"></i>
+    </button>
+  </div>
+</div>
+<div class="bg-white bb-l br-l clearfix ofx-hidden">
+  <div dropdown class="dropdown float-left">
+    <button class="btn btn-secondary b-0 br-l rad-0" data-toggle="dropdown">
+      Company <i class="fa fa-angle-down"></i>
+    </button>
+    <ul class="dropdown-menu">
+      <li class="dropdown-item"><a class="dropdown-item">Google</a></li>
+      <li class="dropdown-item"><a class="dropdown-item">Facebook</a></li>
+      <li class="dropdown-item"><a class="dropdown-item">Twitter</a></li>
+      <li class="dropdown-item"><a class="dropdown-item">Microsoft</a></li>
+    </ul>
+  </div>
+  <div class="dropdown float-right">
+    <button class="btn btn-secondary b-0 bl-l rad-0" data-toggle="dropdown">
+      Order by <i class="fa fa-angle-down"></i>
+    </button>
+    <ul class="dropdown-menu">
+      <li class="dropdown-item"><a class="dropdown-item">Name</a></li>
+      <li class="dropdown-item"><a class="dropdown-item">Work</a></li>
+      <li class="dropdown-item"><a class="dropdown-item">Skill</a></li>
+      <li class="dropdown-item"><a class="dropdown-item">Status</a></li>
+    </ul>
+  </div>
+</div>
+<div class="p-3 relative col-md-12">
+  <div class="panel bb-0">
+    <div class="card-block p-0">
+      <div class="row ofx-hidden m-0 text-center">
+        <div class="col-md-3 col-sm-3 col-sm-6 p-0 br-l bb-l">
+          <div class="p-3"><strong>45</strong> person</div>
+        </div>
+        <div class="col-md-3 col-sm-3 col-sm-6 p-0 br-l bb-l">
+          <div class="p-3"><strong>9</strong> company</div>
+        </div>
+        <div class="col-md-3 col-sm-3 col-sm-6 p-0 br-l bb-l">
+          <div class="p-3"><strong>10</strong> country</div>
+        </div>
+        <div class="col-md-3 col-sm-3 col-sm-6 p-0 bb-l">
+          <div class="p-3"><strong>12</strong> online</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row row-gap-5">
+    <div class="col-md-4">
+      <div class="panel b-panel">
+        <div class="bg-info text-white b-0 p-3 item panel-fix text-center">
+          <div class="p-3 relative top left">
+            <div class="p-2 text-white">
+              <i class="fa fa-eye"></i> 4433
+            </div>
+          </div>
+          <div class="p-3 relative top right">
+            <div class="p-2 text-white">
+              <i class="fa fa-thumbs-o-up "></i> 1345
+            </div>
+          </div>
+          <img src="/static/img/avatar6.jpg" class="rounded-circle b-4px b-solid b-white" width="90px" height="90px">
+          <div class="text-white h4 m-0 my-2">Jesse Holmes</div>
+          <div>
+            <a class="text-white"><i class="fa fa-facebook-square fa-2x fa-fw"></i></a>
+            <a class="text-white"><i class="fa fa-twitter-square fa-2x fa-fw"></i></a>
+            <a class="text-white"><i class="fa fa-google-plus-square fa-2x fa-fw"></i></a>
+          </div>
+        </div>
+        <div class="card-block p-0">
+          <div class="progress progress-xs m-0 rad-0 bg-white">
+            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+                 aria-valuemax="100" style="width: 40%">
+              <span class="sr-only">40% Complete (success)</span>
+            </div>
+          </div>
+          <div class="row m-0 bg-white bb-l bt-l">
+            <div class="col-md-4 col-sm-4 col-sm-4 p-0 br-l">
+              <div class="p-2">
+                <div class="font-xs text-muted">WORK</div>
+                <div>Google</div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-sm-4 p-0 br-l">
+              <div class="p-2">
+                <div class="font-xs text-muted">SKILL</div>
+                <div>High</div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-sm-4 p-0">
+              <div class="p-2">
+                <div class="font-xs text-muted">AGE</div>
+                <div>37</div>
+              </div>
+            </div>
+          </div>
+          <div class="row m-0 bg-white">
+            <div class="col-md-6 col-sm-6 col-sm-6 p-0 br-l ">
+              <div class="p-2">
+                <div class="font-xs text-muted">ADDRESS</div>
+                <div>NY, Fifth Av. 101</div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-sm-6 p-0">
+              <div class="p-2">
+                <div class="font-xs text-muted">LOREM</div>
+                <div>Ipsum dolor</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="panel b-panel">
+        <div class="bg-light dk b-0 p-3 item panel-fix text-center">
+          <div class="p-3 relative top left">
+            <div class="p-2 text-white">
+              <i class="fa fa-eye"></i> 4433
+            </div>
+          </div>
+          <div class="p-3 relative top right">
+            <div class="p-2 text-white">
+              <i class="fa fa-thumbs-o-up "></i> 1345
+            </div>
+          </div>
+          <img src="/static/img/avatar5.jpg" class="rounded-circle b-4px b-solid b-white" width="90px" height="90px">
+          <div class="text-white h4 m-0 my-2">John Micheal</div>
+          <div>
+            <a class="text-white"><i class="fa fa-facebook-square fa-2x fa-fw"></i></a>
+            <a class="text-white"><i class="fa fa-twitter-square fa-2x fa-fw"></i></a>
+            <a class="text-white"><i class="fa fa-google-plus-square fa-2x fa-fw"></i></a>
+          </div>
+        </div>
+        <div class="card-block p-0">
+          <div class="progress progress-xs m-0 rad-0 bg-white">
+            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="20" aria-valuemin="0"
+                 aria-valuemax="100" style="width: 20%">
+              <span class="sr-only">40% Complete (success)</span>
+            </div>
+          </div>
+          <div class="row m-0 bg-white bb-l bt-l">
+            <div class="col-md-4 col-sm-4 col-sm-4 p-0 br-l">
+              <div class="p-2">
+                <div class="font-xs text-muted">WORK</div>
+                <div>Google</div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-sm-4 p-0 br-l">
+              <div class="p-2">
+                <div class="font-xs text-muted">SKILL</div>
+                <div>High</div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-sm-4 p-0">
+              <div class="p-2">
+                <div class="font-xs text-muted">AGE</div>
+                <div>37</div>
+              </div>
+            </div>
+          </div>
+          <div class="row m-0 bg-white">
+            <div class="col-md-6 col-sm-6 col-sm-6 p-0 br-l ">
+              <div class="p-2">
+                <div class="font-xs text-muted">ADDRESS</div>
+                <div>NY, Fifth Av. 101</div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-sm-6 p-0">
+              <div class="p-2">
+                <div class="font-xs text-muted">LOREM</div>
+                <div>Ipsum dolor</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="panel b-panel">
+        <div class="bg-success lt b-0 p-3 item panel-fix text-center">
+          <div class="p-3 relative top left">
+            <div class="p-2 text-white">
+              <i class="fa fa-eye"></i> 4433
+            </div>
+          </div>
+          <div class="p-3 relative top right">
+            <div class="p-2 text-white">
+              <i class="fa fa-thumbs-o-up "></i> 1345
+            </div>
+          </div>
+          <img src="/static/img/avatar6.jpg" class="rounded-circle b-4px b-solid b-white" width="90px" height="90px">
+          <div class="text-white h4 m-0 my-2">Jack Moodle</div>
+          <div>
+            <a class="text-white"><i class="fa fa-facebook-square fa-2x fa-fw"></i></a>
+            <a class="text-white"><i class="fa fa-twitter-square fa-2x fa-fw"></i></a>
+            <a class="text-white"><i class="fa fa-google-plus-square fa-2x fa-fw"></i></a>
+          </div>
+        </div>
+        <div class="card-block p-0">
+          <div class="progress progress-xs m-0 rad-0 bg-white">
+            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="20" aria-valuemin="0"
+                 aria-valuemax="100" style="width: 90%">
+              <span class="sr-only">40% Complete (success)</span>
+            </div>
+          </div>
+          <div class="row m-0 bg-white bb-l bt-l">
+            <div class="col-md-4 col-sm-4 col-sm-4 p-0 br-l">
+              <div class="p-2">
+                <div class="font-xs text-muted">WORK</div>
+                <div>Google</div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-sm-4 p-0 br-l">
+              <div class="p-2">
+                <div class="font-xs text-muted">SKILL</div>
+                <div>High</div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-sm-4 p-0">
+              <div class="p-2">
+                <div class="font-xs text-muted">AGE</div>
+                <div>37</div>
+              </div>
+            </div>
+          </div>
+          <div class="row m-0 bg-white">
+            <div class="col-md-6 col-sm-6 col-sm-6 p-0 br-l ">
+              <div class="p-2">
+                <div class="font-xs text-muted">ADDRESS</div>
+                <div>NY, Fifth Av. 101</div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-sm-6 p-0">
+              <div class="p-2">
+                <div class="font-xs text-muted">LOREM</div>
+                <div>Ipsum dolor</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row row-gap-5">
+    <div class="col-md-4">
+      <div class="panel b-panel">
+        <div class=" bg-light dk b-0 p-3 item panel-fix text-center">
+          <div class="p-3 relative top left">
+            <div class="p-2 text-white">
+              <i class="fa fa-eye"></i> 4433
+            </div>
+          </div>
+          <div class="p-3 relative top right">
+            <div class="p-2 text-white">
+              <i class="fa fa-thumbs-o-up "></i> 1345
+            </div>
+          </div>
+          <img src="/static/img/avatar6.jpg" class="rounded-circle b-4px b-solid b-white" width="90px" height="90px">
+          <div class="text-white h4 m-0 my-2">Jesse Holmes</div>
+          <div>
+            <a class="text-white"><i class="fa fa-facebook-square fa-2x fa-fw"></i></a>
+            <a class="text-white"><i class="fa fa-twitter-square fa-2x fa-fw"></i></a>
+            <a class="text-white"><i class="fa fa-google-plus-square fa-2x fa-fw"></i></a>
+          </div>
+        </div>
+        <div class="card-block p-0">
+          <div class="progress progress-xs m-0 rad-0 bg-white">
+            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+                 aria-valuemax="100" style="width: 40%">
+              <span class="sr-only">40% Complete (success)</span>
+            </div>
+          </div>
+          <div class="row m-0 bg-white bb-l bt-l">
+            <div class="col-md-4 col-sm-4 col-sm-4 p-0 br-l">
+              <div class="p-2">
+                <div class="font-xs text-muted">WORK</div>
+                <div>Google</div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-sm-4 p-0 br-l">
+              <div class="p-2">
+                <div class="font-xs text-muted">SKILL</div>
+                <div>High</div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-sm-4 p-0">
+              <div class="p-2">
+                <div class="font-xs text-muted">AGE</div>
+                <div>37</div>
+              </div>
+            </div>
+          </div>
+          <div class="row m-0 bg-white">
+            <div class="col-md-6 col-sm-6 col-sm-6 p-0 br-l ">
+              <div class="p-2">
+                <div class="font-xs text-muted">ADDRESS</div>
+                <div>NY, Fifth Av. 101</div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-sm-6 p-0">
+              <div class="p-2">
+                <div class="font-xs text-muted">LOREM</div>
+                <div>Ipsum dolor</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="panel b-panel">
+        <div class="bg-danger text-white b-0 p-3 item panel-fix text-center">
+          <div class="p-3 relative top left">
+            <div class="p-2 text-white">
+              <i class="fa fa-eye"></i> 4433
+            </div>
+          </div>
+          <div class="p-3 relative top right">
+            <div class="p-2 text-white">
+              <i class="fa fa-thumbs-o-up "></i> 1345
+            </div>
+          </div>
+          <img src="/static/img/avatar5.jpg" class="rounded-circle b-4px b-solid b-white" width="90px" height="90px">
+          <div class="text-white h4 m-0 my-2">John Micheal</div>
+          <div>
+            <a class="text-white"><i class="fa fa-facebook-square fa-2x fa-fw"></i></a>
+            <a class="text-white"><i class="fa fa-twitter-square fa-2x fa-fw"></i></a>
+            <a class="text-white"><i class="fa fa-google-plus-square fa-2x fa-fw"></i></a>
+          </div>
+        </div>
+        <div class="card-block p-0">
+          <div class="progress progress-xs m-0 rad-0 bg-white">
+            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="20" aria-valuemin="0"
+                 aria-valuemax="100" style="width: 20%">
+              <span class="sr-only">40% Complete (success)</span>
+            </div>
+          </div>
+          <div class="row m-0 bg-white bb-l bt-l">
+            <div class="col-md-4 col-sm-4 col-sm-4 p-0 br-l">
+              <div class="p-2">
+                <div class="font-xs text-muted">WORK</div>
+                <div>Google</div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-sm-4 p-0 br-l">
+              <div class="p-2">
+                <div class="font-xs text-muted">SKILL</div>
+                <div>High</div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-sm-4 p-0">
+              <div class="p-2">
+                <div class="font-xs text-muted">AGE</div>
+                <div>37</div>
+              </div>
+            </div>
+          </div>
+          <div class="row m-0 bg-white">
+            <div class="col-md-6 col-sm-6 col-sm-6 p-0 br-l ">
+              <div class="p-2">
+                <div class="font-xs text-muted">ADDRESS</div>
+                <div>NY, Fifth Av. 101</div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-sm-6 p-0">
+              <div class="p-2">
+                <div class="font-xs text-muted">LOREM</div>
+                <div>Ipsum dolor</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="panel b-panel">
+        <div class="bg-warning lt b-0 p-3 item panel-fix text-center">
+          <div class="p-3 relative top left">
+            <div class="p-2 text-white">
+              <i class="fa fa-eye"></i> 4433
+            </div>
+          </div>
+          <div class="p-3 relative top right">
+            <div class="p-2 text-white">
+              <i class="fa fa-thumbs-o-up "></i> 1345
+            </div>
+          </div>
+          <img src="/static/img/avatar6.jpg" class="rounded-circle b-4px b-solid b-white" width="90px" height="90px">
+          <div class="text-white h4 m-0 my-2">Jack Moodle</div>
+          <div>
+            <a class="text-white"><i class="fa fa-facebook-square fa-2x fa-fw"></i></a>
+            <a class="text-white"><i class="fa fa-twitter-square fa-2x fa-fw"></i></a>
+            <a class="text-white"><i class="fa fa-google-plus-square fa-2x fa-fw"></i></a>
+          </div>
+        </div>
+        <div class="card-block p-0">
+          <div class="progress progress-xs m-0 rad-0 bg-white">
+            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="20" aria-valuemin="0"
+                 aria-valuemax="100" style="width: 90%">
+              <span class="sr-only">40% Complete (success)</span>
+            </div>
+          </div>
+          <div class="row m-0 bg-white bb-l bt-l">
+            <div class="col-md-4 col-sm-4 col-sm-4 p-0 br-l">
+              <div class="p-2">
+                <div class="font-xs text-muted">WORK</div>
+                <div>Google</div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-sm-4 p-0 br-l">
+              <div class="p-2">
+                <div class="font-xs text-muted">SKILL</div>
+                <div>High</div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-sm-4 p-0">
+              <div class="p-2">
+                <div class="font-xs text-muted">AGE</div>
+                <div>37</div>
+              </div>
+            </div>
+          </div>
+          <div class="row m-0 bg-white">
+            <div class="col-md-6 col-sm-6 col-sm-6 p-0 br-l ">
+              <div class="p-2">
+                <div class="font-xs text-muted">ADDRESS</div>
+                <div>NY, Fifth Av. 101</div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-sm-6 p-0">
+              <div class="p-2">
+                <div class="font-xs text-muted">LOREM</div>
+                <div>Ipsum dolor</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
